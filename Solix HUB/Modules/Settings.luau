@@ -4,9 +4,9 @@ return function(Library)
 	Library.SettingsPage = function(self, Window, Properties)
 		Properties = Properties or {}
 		local p = Window:Page({ Name = Properties.Name or "Settings", Columns = 2 })
-		local s = p:Section({ Name = "UI", Side = "Left" })
-		local s2 = p:Section({ Name = "Configs", Side = "Right" })
-		local s3 = p:Section({ Name = "Theme", Side = "Right" })
+		local s = p:Section({ Name = "UI", Side = 1 })
+		local s2 = p:Section({ Name = "Configs", Side = 2 })
+		local s3 = p:Section({ Name = "Theme", Side = 2 })
 
 		local capturing = false
 
