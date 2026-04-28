@@ -1,4 +1,4 @@
-local BASE = (getgenv().SolixBase) or "https://raw.githubusercontent.com/YOUR_USER/YOUR_REPO/main/"
+local BASE = (getgenv().SolixBase) or "https://raw.githubusercontent.com/Synergay/xenmon/main/Solix%20HUB/"
 
 local function fetch(p) return game:HttpGet(BASE..p) end
 local function load(p) return loadstring(fetch(p), p)() end
